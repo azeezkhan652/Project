@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BMSCsharpModelStoreContainer" CdmEntityContainer="BMSCsharpEntities">
+    <EntitySetMapping Name="employeeS">
+      <EntityTypeMapping TypeName="BMSCsharpModel.employee">
+        <MappingFragment StoreEntitySet="employeeS">
+          <ScalarProperty Name="empcode" ColumnName="empcode" />
+          <ScalarProperty Name="empname" ColumnName="empname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phoneno" ColumnName="phoneno" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="joindate" ColumnName="joindate" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

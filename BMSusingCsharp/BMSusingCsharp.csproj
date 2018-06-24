@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F656C948-09B8-4C75-8141-46C17ECA3028}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BMSusingCsharp</RootNamespace>
+    <AssemblyName>BMSusingCsharp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Boutique\BMSusingCsharp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4C3D4058B3C2605705BE4F1F54F6B98D34FF05E8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BMSusingCsharp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BMSCsharpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet7.cs">
+      <DependentUpon>BMSCsharpDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSCsharpDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSCsharpDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clthsell.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clthsell.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clthsell2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clthsell2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cust.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dss.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dss.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F11Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F11Main.Designer.cs">
+      <DependentUpon>F11Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F1login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1login.Designer.cs">
+      <DependentUpon>F1login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F2newuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F2newuser.Designer.cs">
+      <DependentUpon>F2newuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F3frgtpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F3frgtpass.Designer.cs">
+      <DependentUpon>F3frgtpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F4clothes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F4clothes.Designer.cs">
+      <DependentUpon>F4clothes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F5customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F5customer.Designer.cs">
+      <DependentUpon>F5customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F6sellclothes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F6sellclothes.Designer.cs">
+      <DependentUpon>F6sellclothes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F7sellinvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F7sellinvoice.Designer.cs">
+      <DependentUpon>F7sellinvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F8reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F8reports.Designer.cs">
+      <DependentUpon>F8reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F9profitstt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F9profitstt.Designer.cs">
+      <DependentUpon>F9profitstt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm1sellstt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm1sellstt.Designer.cs">
+      <DependentUpon>Fm1sellstt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm2stckclth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm2stckclth.Designer.cs">
+      <DependentUpon>fm2stckclth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm3stckalert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm3stckalert.Designer.cs">
+      <DependentUpon>Fm3stckalert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm4totalsell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm4totalsell.Designer.cs">
+      <DependentUpon>Fm4totalsell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm5totalprofit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm5totalprofit.Designer.cs">
+      <DependentUpon>Fm5totalprofit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm6invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm6invoice.Designer.cs">
+      <DependentUpon>Fm6invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm7allcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm7allcustomer.Designer.cs">
+      <DependentUpon>Fm7allcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm8employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm8employee.Designer.cs">
+      <DependentUpon>Fm8employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm9editinvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm9editinvoice.Designer.cs">
+      <DependentUpon>Fm9editinvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11main.Designer.cs">
+      <DependentUpon>Form11main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sellclothes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sellclothes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="F11Main.resx">
+      <DependentUpon>F11Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1login.resx">
+      <DependentUpon>F1login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F2newuser.resx">
+      <DependentUpon>F2newuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F3frgtpass.resx">
+      <DependentUpon>F3frgtpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F4clothes.resx">
+      <DependentUpon>F4clothes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F5customer.resx">
+      <DependentUpon>F5customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F6sellclothes.resx">
+      <DependentUpon>F6sellclothes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F7sellinvoice.resx">
+      <DependentUpon>F7sellinvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F8reports.resx">
+      <DependentUpon>F8reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F9profitstt.resx">
+      <DependentUpon>F9profitstt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm1sellstt.resx">
+      <DependentUpon>Fm1sellstt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm2stckclth.resx">
+      <DependentUpon>fm2stckclth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm3stckalert.resx">
+      <DependentUpon>Fm3stckalert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm4totalsell.resx">
+      <DependentUpon>Fm4totalsell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm5totalprofit.resx">
+      <DependentUpon>Fm5totalprofit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm6invoice.resx">
+      <DependentUpon>Fm6invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm7allcustomer.resx">
+      <DependentUpon>Fm7allcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm8employee.resx">
+      <DependentUpon>Fm8employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm9editinvoice.resx">
+      <DependentUpon>Fm9editinvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11main.resx">
+      <DependentUpon>Form11main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
+    <None Include="BMSCsharpDataSet.xsc">
+      <DependentUpon>BMSCsharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet.xss">
+      <DependentUpon>BMSCsharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet1.xsc">
+      <DependentUpon>BMSCsharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet1.xss">
+      <DependentUpon>BMSCsharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet10.xsc">
+      <DependentUpon>BMSCsharpDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet10.xss">
+      <DependentUpon>BMSCsharpDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet2.xsc">
+      <DependentUpon>BMSCsharpDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet2.xss">
+      <DependentUpon>BMSCsharpDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet3.xsc">
+      <DependentUpon>BMSCsharpDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet3.xss">
+      <DependentUpon>BMSCsharpDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet4.xsc">
+      <DependentUpon>BMSCsharpDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet4.xss">
+      <DependentUpon>BMSCsharpDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet5.xsc">
+      <DependentUpon>BMSCsharpDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet5.xss">
+      <DependentUpon>BMSCsharpDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet6.xsc">
+      <DependentUpon>BMSCsharpDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet6.xss">
+      <DependentUpon>BMSCsharpDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet7.xsc">
+      <DependentUpon>BMSCsharpDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet7.xss">
+      <DependentUpon>BMSCsharpDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet8.xsc">
+      <DependentUpon>BMSCsharpDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet8.xss">
+      <DependentUpon>BMSCsharpDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet9.xsc">
+      <DependentUpon>BMSCsharpDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="BMSCsharpDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSCsharpDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSCsharpDataSet9.xss">
+      <DependentUpon>BMSCsharpDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="BMSusingCsharp_TemporaryKey.pfx" />
+    <None Include="clthsell.xsc">
+      <DependentUpon>clthsell.xsd</DependentUpon>
+    </None>
+    <None Include="clthsell.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clthsell.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clthsell.xss">
+      <DependentUpon>clthsell.xsd</DependentUpon>
+    </None>
+    <None Include="clthsell2.xsc">
+      <DependentUpon>clthsell2.xsd</DependentUpon>
+    </None>
+    <None Include="clthsell2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clthsell2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clthsell2.xss">
+      <DependentUpon>clthsell2.xsd</DependentUpon>
+    </None>
+    <None Include="cust.xsc">
+      <DependentUpon>cust.xsd</DependentUpon>
+    </None>
+    <None Include="cust.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cust.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cust.xss">
+      <DependentUpon>cust.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dss.xsc">
+      <DependentUpon>dss.xsd</DependentUpon>
+    </None>
+    <None Include="dss.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dss.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dss.xss">
+      <DependentUpon>dss.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sellclothes.xsc">
+      <DependentUpon>sellclothes.xsd</DependentUpon>
+    </None>
+    <None Include="sellclothes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sellclothes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sellclothes.xss">
+      <DependentUpon>sellclothes.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled153.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled155.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.jpg" />
+    <Content Include="1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="111.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="112.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="117.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="118.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="119.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="120.jpg" />
+    <Content Include="121.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="122.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="123.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="124.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="13e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="14e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="15e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="1a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="1b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="1c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="1d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="1e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="3e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4.ico" />
+    <Content Include="4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="4e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="5e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="6e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="8e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9d.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="9e.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\141.jpg" />
+    <None Include="Resources\142.jpg" />
+    <None Include="Resources\143.jpg" />
+    <None Include="Resources\144.jpg" />
+    <None Include="Resources\145.jpg" />
+    <None Include="Resources\146.jpg" />
+    <None Include="Resources\147.jpg" />
+    <None Include="Resources\148.jpg" />
+    <None Include="Resources\149.jpg" />
+    <None Include="Resources\150.jpg" />
+    <None Include="Resources\151.jpg" />
+    <None Include="Resources\152.jpg" />
+    <Content Include="Untitled118.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Untitled44.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Untitled53.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Untitled56.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Untitled61.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Untitled93.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\robot.png" />
+    <None Include="Resources\robot1.png" />
+    <Content Include="download %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2810%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2811%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2812%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2813%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2814%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2815%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2816%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2817%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %2818%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %282%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %283%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %284%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %285%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %286%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %287%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %288%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download %289%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="download.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images.jpg" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Untitled162.jpg" />
+    <None Include="Resources\download %2813%29.jpg" />
+    <None Include="Resources\download %2814%29.jpg" />
+    <None Include="Resources\download %2815%29.jpg" />
+    <None Include="Resources\download %2816%29.jpg" />
+    <None Include="Resources\download %2817%29.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\download %281%29.jpg" />
+    <None Include="Resources\download %283%29.jpg" />
+    <None Include="Resources\download %284%29.jpg" />
+    <None Include="Resources\download %285%29.jpg" />
+    <None Include="Resources\download %286%29.jpg" />
+    <None Include="Resources\download %287%29.jpg" />
+    <None Include="Resources\download %288%29.jpg" />
+    <None Include="Resources\download %289%29.jpg" />
+    <None Include="Resources\download %2810%29.jpg" />
+    <None Include="Resources\download %2818%29.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
